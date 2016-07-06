@@ -28,7 +28,7 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </Button>
-      <Button fx:id="BtnMenuSala" focusTraversable="false" layoutX="414.0" layoutY="249.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="150.0" text="Devoluções">
+      <Button fx:id="BtnMenuDevolucao" focusTraversable="false" layoutX="414.0" layoutY="249.0" mnemonicParsing="false" onAction="#HandleBtnMenuDevolucao" prefHeight="46.0" prefWidth="150.0" text="Devoluções">
          <font>
             <Font name="System Bold" size="14.0" />
          </font>
@@ -44,7 +44,7 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </Button>
-      <Button fx:id="BtnMenuVenda" focusTraversable="false" layoutX="414.0" layoutY="322.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="150.0" text="Relatórios">
+      <Button fx:id="BtnMenuRelatorio" focusTraversable="false" layoutX="414.0" layoutY="322.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="150.0" text="Relatórios">
          <font>
             <Font name="System Bold" size="14.0" />
          </font>

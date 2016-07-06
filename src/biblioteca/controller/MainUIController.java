@@ -25,9 +25,9 @@ public class MainUIController implements Initializable {
     @FXML
     private Button BtnMenuLivro;
     @FXML
-    private Button BtnMenuretirada;
+    private Button BtnMenuRetirada;
     @FXML
-    private Button BtnMenuVenda;
+    private Button BtnMenuDevolucao;
     @FXML
     private AnchorPane anchorPane;
 
@@ -76,6 +76,22 @@ public class MainUIController implements Initializable {
         Parent root = null;
         try {
             root = FXMLLoader.load(getClass().getResource("/biblioteca/view/RetiradaUI.fxml"));
+        } catch (IOException ex) {
+            Logger.getLogger(LivroUIController.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        Scene scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
+    }
+    
+    @FXML
+    public void HandleBtnMenuDevolucao(ActionEvent event) throws IOException {
+        Node node = (Node) event.getSource();
+
+        Stage stage = (Stage) node.getScene().getWindow();
+        Parent root = null;
+        try {
+            root = FXMLLoader.load(getClass().getResource("/biblioteca/view/DevolucaoUI.fxml"));
         } catch (IOException ex) {
             Logger.getLogger(LivroUIController.class.getName()).log(Level.SEVERE, null, ex);
         }
