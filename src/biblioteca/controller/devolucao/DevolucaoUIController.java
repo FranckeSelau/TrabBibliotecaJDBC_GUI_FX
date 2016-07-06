@@ -33,7 +33,7 @@ public class DevolucaoUIController implements Initializable {
         Stage stage = new Stage();
         Parent root = null;
         try {
-            root = FXMLLoader.load(Biblioteca.class.getResource("/biblioteca/view/retirada/AnchorPaneFundoDevolucao.fxml"));
+            root = FXMLLoader.load(Biblioteca.class.getResource("/biblioteca/view/devolucao/AnchorPaneFundoDevolucao.fxml"));
         } catch (IOException ex) {
             Logger.getLogger(DevolucaoUIController.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -64,7 +64,7 @@ public class DevolucaoUIController implements Initializable {
 
     public void HandleMenuItemCadastrar(ActionEvent event) throws IOException {
         Stage stage = new Stage();
-        Parent root = FXMLLoader.load(Biblioteca.class.getResource("/biblioteca/view/devolucao/AnchorPaneCadastrarDevolucao.fxml"));
+        Parent root = FXMLLoader.load(Biblioteca.class.getResource("/biblioteca/view/retirada/AnchorPaneCadastrarRetirada.fxml"));
         AnchorPaneDevolucao.getChildren().setAll(root);
     }
 
