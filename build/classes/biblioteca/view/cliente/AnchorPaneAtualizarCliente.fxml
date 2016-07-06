@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="323.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="biblioteca.controller.cliente.AnchorPaneAtualizarClienteController">
+   <children>
+      <SplitPane dividerPositions="0.6105919003115264" layoutX="140.0" layoutY="55.0" orientation="VERTICAL" prefHeight="323.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <TableView fx:id="tableViewCliente" layoutX="38.0" layoutY="-3.0" prefHeight="193.0" prefWidth="598.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <columns>
+                      <TableColumn fx:id="tableColumnMatriculaCliente" prefWidth="88.0" text="Matrícula" />
+                      <TableColumn fx:id="tableColumnNomeCliente" prefWidth="363.0" text="Nome" />
+                        <TableColumn fx:id="tableColumnClienteTelefone" prefWidth="146.0" text="Telefone" />
+                    </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+          <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="0.0" minWidth="0.0" prefHeight="90.0" prefWidth="598.0">
+               <children>
+                  <TextField fx:id="textFieldNomeCliente" layoutX="122.0" layoutY="15.0" prefHeight="25.0" prefWidth="321.0" />
+                  <TextField fx:id="textFieldTelefone" layoutX="122.0" layoutY="50.0" prefHeight="25.0" prefWidth="321.0" />
+                  <Label layoutX="41.0" layoutY="19.0" text="Nome:">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="41.0" layoutY="54.0" text="Telefone: ">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="btnAtualizarCliente" layoutX="456.0" layoutY="50.0" mnemonicParsing="false" onAction="#HandleBtnAtualizarCliente" prefHeight="25.0" prefWidth="128.0" text="Atualizar Cliente">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Button>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

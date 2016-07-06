@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="323.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="biblioteca.controller.livro.AnchorPaneBuscaNomeController">
+   <children>
+      <SplitPane dividerPositions="0.1277258566978193" layoutX="168.0" layoutY="74.0" orientation="VERTICAL" prefHeight="323.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <Button fx:id="btnBusca" layoutX="505.0" layoutY="7.0" mnemonicParsing="false" onAction="#HandlebtnPesquisar" prefHeight="25.0" prefWidth="74.0" text="Busca">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Button>
+                  <Label layoutX="6.0" layoutY="11.0" prefHeight="17.0" prefWidth="112.0" text=" Informe o Título: ">
+                     <font>
+                        <Font size="14.0" />
+                     </font></Label>
+                  <TextField fx:id="textFieldBuscaNome" layoutX="128.0" layoutY="7.0" prefHeight="25.0" prefWidth="359.0" />
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <TableView fx:id="tableViewLivro" layoutX="121.0" layoutY="47.0" prefHeight="277.0" prefWidth="598.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <columns>
+                      <TableColumn fx:id="tableColumnIsbnLivro" prefWidth="46.0" text="ISBN" />
+                        <TableColumn fx:id="tableColumnTituloLivro" prefWidth="273.0" text="Título" />
+                      <TableColumn fx:id="tableColumnAutorLivro" prefWidth="114.0" text="Autor" />
+                        <TableColumn fx:id="tableColumnEditoraLivro" prefWidth="107.0" text="Editora" />
+                        <TableColumn fx:id="tableColumnAnoLivro" prefWidth="57.0" text="Ano" />
+                    </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="323.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="biblioteca.controller.retirada.AnchorPaneCadastrarRetiradaController">
+   <children>
+      <SplitPane dividerPositions="0.1277258566978193" layoutY="30.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="116.0" prefWidth="603.0" AnchorPane.bottomAnchor="178.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="30.0">
+        <items>
+          <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="0.0" minWidth="0.0" prefHeight="37.0" prefWidth="598.0">
+               <children>
+                  <Button fx:id="btnBuscaCliente" layoutX="505.0" layoutY="7.0" mnemonicParsing="false" onAction="#HandlebtnPesquisarMatricula" prefHeight="25.0" prefWidth="74.0" text="Busca">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Button>
+                  <Label layoutX="6.0" layoutY="11.0" prefHeight="20.0" prefWidth="208.0" text=" Informe a Matrícula do Cliente: ">
+                     <font>
+                        <Font size="14.0" />
+                     </font></Label>
+                  <TextField fx:id="textFieldBuscaMatricula" layoutX="215.0" layoutY="7.0" prefHeight="25.0" prefWidth="272.0" />
+               </children>
+            </AnchorPane>
+          <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="0.0" minWidth="0.0" prefHeight="58.0" prefWidth="598.0">
+               <children>
+                  <TableView fx:id="tableViewCliente" layoutX="121.0" layoutY="47.0" prefHeight="66.0" prefWidth="598.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <columns>
+                      <TableColumn fx:id="tableColumnMatriculaCliente" text="Matrícula" />
+                        <TableColumn fx:id="tableColumnNomeCliente" prefWidth="402.0" text="Nome" />
+                        <TableColumn fx:id="tableColumnTelefoneCliente" prefWidth="115.0" text="Telefone" />
+                    </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+      <SplitPane dividerPositions="0.5" layoutY="173.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="103.0" prefWidth="603.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="173.0">
+         <items>
+            <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="0.0" minWidth="0.0" prefHeight="37.0" prefWidth="598.0">
+               <children>
+                  <Button fx:id="btnBuscaLivro" layoutX="505.0" layoutY="7.0" mnemonicParsing="false" onAction="#HandlebtnPesquisarISBN" prefHeight="25.0" prefWidth="74.0" text="Busca">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Button>
+                  <Label layoutX="6.0" layoutY="11.0" prefHeight="20.0" prefWidth="172.0" text=" Informe o ISBN do Livro: ">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="textFieldBuscaISBN" layoutX="175.0" layoutY="7.0" prefHeight="25.0" prefWidth="312.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="0.0" minWidth="0.0" prefHeight="58.0" prefWidth="598.0">
+               <children>
+                  <TableView fx:id="tableViewLivro" layoutX="121.0" layoutY="47.0" prefHeight="66.0" prefWidth="598.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <columns>
+                        <TableColumn fx:id="tableColumnIsbnLivro" prefWidth="46.0" text="ISBN" />
+                        <TableColumn fx:id="tableColumnTituloLivro" prefWidth="273.0" text="Título" />
+                        <TableColumn fx:id="tableColumnAutorLivro" prefWidth="114.0" text="Autor" />
+                        <TableColumn fx:id="tableColumnEditoraLivro" prefWidth="107.0" text="Editora" />
+                        <TableColumn fx:id="tableColumnAnoLivro" prefWidth="57.0" text="Ano" />
+                     </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+         </items>
+      </SplitPane>
+      <AnchorPane layoutY="287.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="0.0" minWidth="0.0" prefHeight="37.0" prefWidth="603.0">
+         <children>
+            <Button fx:id="btnCadastrarRetirada" layoutX="464.0" mnemonicParsing="false" onAction="#HandleBtnCadastrarRetirada" prefHeight="25.0" prefWidth="128.0" text="Cadastrar Retirada">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+         </children>
+      </AnchorPane>
+      <Label layoutX="13.0" layoutY="150.0" prefHeight="20.0" prefWidth="172.0" text="Localizar Livro">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="6.0" prefHeight="20.0" prefWidth="172.0" text="Localizar Cliente">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

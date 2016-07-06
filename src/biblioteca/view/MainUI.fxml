@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.web.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="biblioteca.controller.MainUIController">
+   <children>
+      <Button fx:id="BtnMenuLivro" focusTraversable="false" layoutX="414.0" layoutY="108.0" mnemonicParsing="false" onAction="#HandleBtnMenuLivro" prefHeight="46.0" prefWidth="150.0" text="Livros">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="BtnMenuCliente" focusTraversable="false" layoutX="414.0" layoutY="35.0" mnemonicParsing="false" onAction="#HandleBtnMenuCliente" prefHeight="46.0" prefWidth="150.0" text="Clientes">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="BtnMenuSala" focusTraversable="false" layoutX="414.0" layoutY="249.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="150.0" text="Devoluções">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="BtnMenuRetirada" focusTraversable="false" layoutX="414.0" layoutY="177.0" mnemonicParsing="false" onAction="#HandleBtnMenuRetirada" prefHeight="46.0" prefWidth="150.0" text="Retiradas">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="BtnMenuVenda" focusTraversable="false" layoutX="414.0" layoutY="322.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="150.0" text="Relatórios">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <ImageView fitHeight="322.0" fitWidth="365.0" layoutX="24.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true" smooth="false">
+         <image>
+            <Image url="@../../imagens/bibliotecaMain.png" />
+         </image>
+      </ImageView>
+   </children>
+   <cursor>
+      <Cursor fx:constant="DEFAULT" />
+   </cursor>
+</AnchorPane>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="323.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="biblioteca.controller.cliente.AnchorPaneBuscaNomeController">
+   <children>
+      <SplitPane dividerPositions="0.1277258566978193" layoutX="168.0" layoutY="74.0" orientation="VERTICAL" prefHeight="323.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <Button fx:id="btnBusca" layoutX="505.0" layoutY="7.0" mnemonicParsing="false" onAction="#HandlebtnPesquisar" prefHeight="25.0" prefWidth="74.0" text="Busca">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Button>
+                  <Label layoutX="6.0" layoutY="11.0" prefHeight="17.0" prefWidth="161.0" text=" Informe o nome do Cliente: " />
+                  <TextField fx:id="textFieldBuscaNome" layoutX="165.0" layoutY="7.0" prefHeight="25.0" prefWidth="322.0" />
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <TableView fx:id="tableViewCliente" layoutX="121.0" layoutY="47.0" prefHeight="277.0" prefWidth="598.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <columns>
+                      <TableColumn fx:id="tableColumnMatriculaCliente" prefWidth="103.0" text="Matrícula" />
+                      <TableColumn fx:id="tableColumnNomeCliente" prefWidth="367.0" text="Nome" />
+                        <TableColumn fx:id="tableColumnTelefoneCliente" prefWidth="127.0" text="Telefone" />
+                    </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>
