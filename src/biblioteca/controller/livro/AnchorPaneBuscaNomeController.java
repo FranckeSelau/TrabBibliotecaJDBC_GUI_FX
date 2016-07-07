@@ -82,10 +82,10 @@ public class AnchorPaneBuscaNomeController implements Initializable {
                 alert.showAndWait();
             }
         } catch (NegocioException ex) {
-            Alert alertFilmeNegocio = new Alert(Alert.AlertType.ERROR);
-            alertFilmeNegocio.setHeaderText("Falha na Busca por Título");
-            alertFilmeNegocio.setContentText(ex.getMessage());
-            alertFilmeNegocio.show();
+            Alert alertNegocio = new Alert(Alert.AlertType.ERROR);
+            alertNegocio.setHeaderText("Falha na Busca por Título");
+            alertNegocio.setContentText(ex.getMessage());
+            alertNegocio.show();
         }
     }
 

@@ -65,11 +65,11 @@ public class AnchorPaneCadastrarLivroController implements Initializable {
                     alert.showAndWait();
                 }
             } else {
-                Alert alertFilmeCadastrado = new Alert(Alert.AlertType.WARNING);
-                alertFilmeCadastrado.setTitle("Confirmação de Cadastro");
-                alertFilmeCadastrado.setHeaderText("ERRO!!!");
-                alertFilmeCadastrado.setContentText("O Livro " + textFieldNomeLivro.getText() + " já foi cadastrado, insira um novo Livro!");
-                alertFilmeCadastrado.showAndWait();
+                Alert alertCadastrado = new Alert(Alert.AlertType.WARNING);
+                alertCadastrado.setTitle("Confirmação de Cadastro");
+                alertCadastrado.setHeaderText("ERRO!!!");
+                alertCadastrado.setContentText("O Livro " + textFieldNomeLivro.getText() + " já foi cadastrado, insira um novo Livro!");
+                alertCadastrado.showAndWait();
             }
         } else {
             Alert alert = new Alert(Alert.AlertType.ERROR);

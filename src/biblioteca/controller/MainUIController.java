@@ -114,6 +114,7 @@ public class MainUIController implements Initializable {
         try {
             root = FXMLLoader.load(getClass().getResource("/biblioteca/view/RelatorioUI.fxml"));
         } catch (IOException ex) {
+            System.out.println("entrou");
             Logger.getLogger(RelatorioUIController.class.getName()).log(Level.SEVERE, null, ex);
         }
         Scene scene = new Scene(root);

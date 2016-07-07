@@ -95,10 +95,10 @@ public class AnchorPaneCadastrarRetiradaController implements Initializable {
                 alert.showAndWait();
             }
         } catch (NegocioException ex) {
-            Alert alertFilmeNegocio = new Alert(Alert.AlertType.ERROR);
-            alertFilmeNegocio.setHeaderText("Falha na Busca!");
-            alertFilmeNegocio.setContentText(ex.getMessage());
-            alertFilmeNegocio.show();
+            Alert alertNegocio = new Alert(Alert.AlertType.ERROR);
+            alertNegocio.setHeaderText("Falha na Busca!");
+            alertNegocio.setContentText(ex.getMessage());
+            alertNegocio.show();
         }
     }
 
