@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.input.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="biblioteca.controller.relatorio.RelatorioUIController">
+   <children>
+      <ToolBar prefHeight="40.0" prefWidth="200.0">
+        <items>
+          <Button fx:id="MenuItemRelatorioDisponiveis" depthTest="DISABLE" focusTraversable="false" mnemonicParsing="false" onAction="#HandleMenuItemDisponivel" prefHeight="25.0" prefWidth="143.0" text="Livros Disponíveis" textAlignment="CENTER">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <Button fx:id="MenuItemRelatorioRetiradasLivros" focusTraversable="false" layoutX="81.0" layoutY="10.0" mnemonicParsing="false" onAction="#HandleMenuItemRetiradasLivro" prefHeight="25.0" prefWidth="142.0" text="Livros mais Retirados">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <Button fx:id="MenuItemRelatorioRetiradasCliente" focusTraversable="false" layoutX="254.0" layoutY="10.0" mnemonicParsing="false" onAction="#HandleMenuItemRetiradasCliente" prefHeight="25.0" prefWidth="142.0" text="Top Clientes Retiradas">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <Button fx:id="MenuItemRelatorioRetiradasAtrasos" focusTraversable="false" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#HandleMenuItemAtrasos" prefHeight="25.0" prefWidth="147.0" text="Clientes que + Atrasam">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+        </items>
+      </ToolBar>
+      <AnchorPane fx:id="AnchorPaneRelatorio" prefHeight="327.0" prefWidth="591.0" />
+      <Pane prefHeight="48.0" prefWidth="600.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" height="33.0" layoutX="5.0" layoutY="5.0" stroke="TRANSPARENT" strokeType="INSIDE" width="468.0">
+               <fill>
+                  <LinearGradient endX="0.9952380952380953" endY="1.0" startY="0.1619047619047619">
+                     <stops>
+                        <Stop color="#0f0032" />
+                        <Stop color="#4737b5" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </fill></Rectangle>
+            <Button fx:id="BtnVoltarPrincipal" focusTraversable="false" layoutX="486.0" layoutY="8.0" mnemonicParsing="false" onAction="#HandleBtnVoltar" prefHeight="25.0" prefWidth="100.0" text="Voltar">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <Text layoutX="181.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Relatórios" wrappingWidth="116.0400390625">
+               <font>
+                  <Font name="Arial Black" size="20.0" />
+               </font>
+               <fill>
+                  <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+                     <stops>
+                        <Stop color="WHITE" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </RadialGradient>
+               </fill>
+            </Text>
+         </children>
+      </Pane>
+   </children>
+</VBox>

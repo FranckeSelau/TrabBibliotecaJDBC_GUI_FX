@@ -1,7 +1,10 @@
 package biblioteca.controller;
 
 import biblioteca.controller.cliente.ClienteUIController;
+import biblioteca.controller.devolucao.DevolucaoUIController;
 import biblioteca.controller.livro.LivroUIController;
+import biblioteca.controller.relatorio.RelatorioUIController;
+import biblioteca.controller.retirada.RetiradaUIController;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -28,6 +31,8 @@ public class MainUIController implements Initializable {
     private Button BtnMenuRetirada;
     @FXML
     private Button BtnMenuDevolucao;
+    @FXML
+    private Button BtnMenuRelatorio;
     @FXML
     private AnchorPane anchorPane;
 
@@ -77,7 +82,7 @@ public class MainUIController implements Initializable {
         try {
             root = FXMLLoader.load(getClass().getResource("/biblioteca/view/RetiradaUI.fxml"));
         } catch (IOException ex) {
-            Logger.getLogger(LivroUIController.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(RetiradaUIController.class.getName()).log(Level.SEVERE, null, ex);
         }
         Scene scene = new Scene(root);
         stage.setScene(scene);
@@ -93,7 +98,23 @@ public class MainUIController implements Initializable {
         try {
             root = FXMLLoader.load(getClass().getResource("/biblioteca/view/DevolucaoUI.fxml"));
         } catch (IOException ex) {
-            Logger.getLogger(LivroUIController.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(DevolucaoUIController.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        Scene scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
+    }
+    
+    @FXML
+    public void HandleBtnMenuRelatorio(ActionEvent event) throws IOException {
+        Node node = (Node) event.getSource();
+
+        Stage stage = (Stage) node.getScene().getWindow();
+        Parent root = null;
+        try {
+            root = FXMLLoader.load(getClass().getResource("/biblioteca/view/RelatorioUI.fxml"));
+        } catch (IOException ex) {
+            Logger.getLogger(RelatorioUIController.class.getName()).log(Level.SEVERE, null, ex);
         }
         Scene scene = new Scene(root);
         stage.setScene(scene);
